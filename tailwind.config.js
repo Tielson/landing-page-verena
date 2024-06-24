@@ -16,6 +16,14 @@ module.exports = {
         '2xl': '1400px',
       },
     },
+    fontFamily: {
+      inter: 'Inter',
+      playwrite: 'Playwrite FR Trad',
+      sans: ['ui-sans-serif', 'system-ui'],
+      serif: ['ui-serif', 'Georgia'],
+      mono: ['ui-monospace', 'SFMono-Regular'],
+      zilla: 'Zilla Slab',
+    },
     extend: {
       colors: {
         border: 'hsl(var(--border))',

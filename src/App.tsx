@@ -1,10 +1,14 @@
-import { Button } from './components/ui/button'
 import './global.css'
+
+import { ThemeProvider } from './components/theme-provider/theme-provider'
+import { Toaster } from './components/ui/toaster'
+import { Home } from './pages/Home'
 
 export function App() {
   return (
-    <div className="flex h-screen items-center justify-center">
-      <Button>Enviar</Button>
-    </div>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <Home />
+      <Toaster />
+    </ThemeProvider>
   )
 }
